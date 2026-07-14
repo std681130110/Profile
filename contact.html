@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อฉัน - Contact</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f7f6; color: #333; }
+        nav { background-color: #2c3e50; padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        nav a:hover { color: #1abc9c; }
+        .container { max-width: 600px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; text-align: center; }
+        .contact-info { margin-bottom: 30px; background: #e8f8f5; padding: 15px; border-radius: 5px; border-left: 5px solid #1abc9c; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #1abc9c; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; width: 100%; }
+        button:hover { background-color: #16a085; }
+        footer { text-align: center; margin-top: 50px; color: #7f8c8d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">หน้าแรก (Home)</a>
+        <a href="skill.html">ทักษะ (Skill)</a>
+        <a href="contact.html">ติดต่อ (Contact)</a>
+    </nav>
+
+    <div class="container">
+        <h1>ติดต่อฉัน (Contact Me)</h1>
+        
+        <div class="contact-info">
+            <p><strong>📧 อีเมล:</strong> your.email@example.com</p>
+            <p><strong>📞 เบอร์โทรศัพท์:</strong> 08x-xxx-xxxx</p>
+            <p><strong>🌐 GitHub / LinkedIn:</strong> @yourusername</p>
+        </div>
+
+        <h3 style="color:#2c3e50;">ส่งข้อความหาฉัน</h3>
+        <form action="#" method="POST" onsubmit="alert('ส่งข้อความสำเร็จ! (นี่คือข้อความจำลอง)'); return false;">
+            <div class="form-group">
+                <label for="name">ชื่อของคุณ:</label>
+                <input type="text" id="name" required placeholder="กรุณากรอกชื่อของคุณ">
+            </div>
+            <div class="form-group">
+                <label for="email">อีเมลของคุณ:</label>
+                <input type="email" id="email" required placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">ข้อความ:</label>
+                <textarea id="message" rows="4" required placeholder="พิมพ์ข้อความที่ต้องการติดต่อที่นี่..."></textarea>
+            </div>
+            <button type="submit">ส่งข้อความ</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2026 เว็บไซต์แนะนำตัวเองของฉัน</p>
+    </footer>
+
+</body>
+</html>
